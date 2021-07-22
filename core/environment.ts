@@ -1,4 +1,4 @@
-export const PORT        = Number( process.env.PORT ) || 9000;
+export const PORT        = Number( process.env.PORT ) || 9001;
 export const DB          = 'skai-cluster';
 export const DB_USER     = 'skai-user';
 export const DB_PASSWORD = 'B2I9YWQBlOPy67ec';

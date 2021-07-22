@@ -9,6 +9,7 @@ import fileupload from 'express-fileupload';
 import express from 'express';
 
 //Routes
+import LoginRoute from './routes/login.route';
 
 
 //Declaraciones
@@ -24,7 +25,7 @@ server.app.use( fileupload() );
 server.app.use( express.static('public') );
 
 //Routes
-
+server.app.use('/login', LoginRoute )
 
 
 server.start( () => {

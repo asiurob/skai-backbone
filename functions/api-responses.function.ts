@@ -66,7 +66,7 @@ export const loginProcess = (
     let response: any = { title: undefined, message: undefined };
         if ( missData ) {
             response.title   = 'Imposible autenticarse';
-            response.message = 'El correo electrónico, marca y contraseña con necesarios';
+            response.message = 'El usuario y/o contraseña son necesarios';
         }else if ( failed ) {
             response.title   = 'Ocurrió un error interno';
             response.message = 'Algo inesperado sucedió, inténtalo nuevamente más tarde';
@@ -75,7 +75,7 @@ export const loginProcess = (
             response.message = 'El usuario no fue encontrado';
         } else if( noAccess ) {
             response.title   = 'Imposible autenticarse';
-            response.message = 'No tienes permisos de ingreso, verificalo con el administrador';
+            response.message = 'Tu cuenta ha sido suspendida. Si crees que es un error, escríbenos a hola@skai.com.mx';
         }else if( badPass ) {
             response.title   = 'Imposible autenticarse';
             response.message = 'La contraseña proporcionada es incorrecta';

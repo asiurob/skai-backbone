@@ -8,7 +8,7 @@ export default class Database {
     private uri: string;
 
     private constructor () {
-        this.uri = `mongodb+srv://${ DB_USER }:${ DB_PASSWORD }@${ DB }.a4rj6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+        this.uri = `mongodb+srv://${ DB_USER }:${ DB_PASSWORD }@${ DB }.zkxvj.mongodb.net/BearDB?retryWrites=true&w=majority`;
     }
 
     public static get instance() {
